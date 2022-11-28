@@ -1,6 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&display=swap');
+
+
 *,::after,::before {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
 
+body {
+    background-color:hsl(30, 38%, 92%);
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    }
+    
+    .div1 { grid-area: 1 / 2 / 2 / 3; }
+    .div2 { grid-area: 2 / 2 / 3 / 3; }
+    .div3 { grid-area: 3 / 2 / 4 / 3; }
+    .div4 { grid-area: 4 / 2 / 5 / 3; }
+    .div5 { grid-area: 5 / 2 / 6 / 3; }
+    .div6 { grid-area: 1 / 1 / 6 / 2; }
+
+.card {
+    position:relative;
+    margin: auto;
+    margin-top: 100px;
+    height: 500px;
+    width: 650px;
+    border-radius: 15px;
+    background-color: white;
+}
+
+img {
+    border-radius: 15px 0px 0px 15px;
+}
+
+.category {
+    margin-left: 25px;
+    margin-top: 15px;
+    color: grey;
+    font-family: 'Montserrat',Arial, Helvetica, sans-serif;
+}
+
+.name {
+    position: relative;
+    margin-left: 25px;
+    margin-top: -25px;
+    font-family: 'Fraunces',Arial, Helvetica, sans-serif;
+}
+
+.description {
+    position: absolute;
+    margin-top: 15px;
+    margin-left: 25px;
+    font-family: 'Montserrat',Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    color: grey;
+    line-height: 28px;
+}
+
+.price {
+    margin-left: 25px;
+    margin-top: 50px;
+    margin-bottom: 25px;
+    color: hsl(158, 36%, 37%);
+    font-family: 'Fraunces',Arial, Helvetica, sans-serif;
+    font-size: 25px;
+}
+
+
+span {
+    margin-left: 25px;
+    font-size: 18px;
+    text-decoration:line-through;
+    color: grey;
+    font-family: 'Montserrat',Arial, Helvetica, sans-serif;
+    font-size: 14px;
+
+}
+
+button {
+    position: relative;
+    margin-left: 25px;
+    height: 50px;
+    width: 75%;
+    border: none;
+    border-radius: 12px;
+    color: white;
+    background-color:hsl(158, 36%, 37%);
+    font-family: 'Montserrat',Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: hsl(158, 34%, 25%);
+}
+.cart-img {
+    position: relative;
+    margin-right: 20px;
+    height: 18px;
+}
